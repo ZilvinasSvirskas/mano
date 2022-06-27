@@ -42,31 +42,29 @@ function Create({ setCreateData }) {
     }
 
     return (
-
-
-        <div classNameName="card m-2">
-            <div classNameName="card-header">
+        <div className="card m-2">
+            <div className="card-header">
                 <h3>Add new book</h3>
             </div>
-            <div classNameName="card-body">
-                <div classNameName="form-group">
+            <div className="card-body">
+                <div className="form-group">
                     <label>Book title</label>
-                    <input type="text" classNameName="form-control" onChange={e =>inputHandler(e,'title')} value={title}/>
-                    <small classNameName="form-text text-muted">Please add new book title.</small>
+                    <input type="text" className="form-control" onChange={e => inputHandler(e, 'title')} value={title} />
+                    <small className="form-text text-muted">Please add new book title.</small>
                 </div>
-                <div classNameName="container p-0">
-                    <div classNameName="row">
-                        <div classNameName="col-4">
-                            <div classNameName="form-group">
+                <div className="container p-0">
+                    <div className="row">
+                        <div className="col-5">
+                            <div className="form-group">
                                 <label>Book author</label>
-                                <input type="text" classNameName="form-control" onChange={e =>inputHandler(e,'author')} value={author} />
-                                <small classNameName="form-text text-muted"> Add book author.</small>
+                                <input type="text" className="form-control" onChange={e => inputHandler(e, 'author')} value={author} />
+                                <small className="form-text text-muted"> Add book author.</small>
                             </div>
                         </div>
-                        <div classNameName="col-6">
-                            <div classNameName="form-group">
+                        <div className="col-6">
+                            <div className="form-group">
                                 <label>Book category</label>
-                                <select classNameName="form-control" onChange={e =>inputHandler(e,'category')} value={category}>
+                                <select className="form-control" onChange={e => inputHandler(e, 'category')} value={category}>
                                     <option value="1">Philosophy</option>
                                     <option value="2">Romance</option>
                                     <option value="3">True crime</option>
@@ -75,11 +73,11 @@ function Create({ setCreateData }) {
                                     <option value="6">Picture book</option>
                                     <option value="7">Journal</option>
                                 </select>
-                                <small classNameName="form-text text-muted"> Book type.</small>
+                                <small className="form-text text-muted"> Book type.</small>
                             </div>
                         </div>
-                        <div classNameName="buttons">
-                        <button type="button" classNameName="btn btn-success m-3" onClick={buttonHandler}>Add</button>
+                        <div className="buttons">
+                            <button type="button" className="btn btn-success m-3" onClick={buttonHandler}>Add</button>
                         </div>
                     </div>
                 </div>
