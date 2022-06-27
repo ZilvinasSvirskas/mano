@@ -1,0 +1,34 @@
+body{
+  font-family: 'Maitree', serif;
+  
+}
+
+.card-header{
+  font: bold;
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.film-line{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.btn-danger{
+  margin-top: 2px;
+
+}
+
+.btn-primary{
+  margin-top: 2px;
+}
+div#modal{
+  display: block;
+  background-color: rgba($color: #000000, $alpha: 0.6);
+}
